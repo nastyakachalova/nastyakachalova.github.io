@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang = "ru">
-  <head> <title> Название страницы </title> </head>
+  <head><p id="name">Качалова Анастасия Алексеевна 25/1</p> </head>
   <body> 
     <h1>Нумерованный список гиперссылок </h1>
     <ol>
@@ -8,12 +8,22 @@
       <li> <a href="http://kubsu.ru/">КубГУ</a> </li>
       <li> <a href="ftp://example.com/Temp/file.txt">Файл с FTP без авторизации</a> </li>
       <li> <a href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Файл с FTP с авторизацией</a> </li>
-      <li> <a href="https://kubsu.ru/ru/abiturient/news##news#:~:text=%D0%9F%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B2%20%D0%9A%D1%83%D0%B1%D0%93%D0%A3%20%D0%B1%D1%8C%D0%B5%D1%82%20%D1%80%D0%B5%D0%BA%D0%BE%D1%80%D0%B4%D1%8B"</a> </li>
+      <li><a href="https://en.wikipedia.org/wiki/270_Park_Avenue_(1960–2021)#Impact">270 Park Avenue (1960–2021),Impact</a> </li>
       <li><a href="#about">Об этой странице</a> </li>
       <li><a href="https://someshop.ru/catalog/iphone?page=1&perpage=20">1-я страница коталога с 20-ю товарами</a> </li>
-      <li><a>Ссылка</a> </li>
-      <a href="#История"><span class="tocnumber">1</span> <span class="toctext">История</span></a></li>
-    <span class="mw-headline" id="История">История</span>
+     <li>
+        <nav>
+          <ul>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#name">Начало страницы</a></li>
+            <li><a href="#form">Форма</a></li>
+          </ul>
+        </nav>
+     </li>
+     <li><a title="Ссылка">Ссылка1</a> </li>
+     <a href="#no_scroll">Ссылка2</a>
+
+     
     </ol>
     <p id="about">Создание этой страницы было моим домашним заданием</p>
   </body>
