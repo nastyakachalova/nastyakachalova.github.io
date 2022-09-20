@@ -69,18 +69,19 @@ a:active {
 }
 .odd
 {
-background-color: #ffff40;
+    background-color: #8A2BE2;
+    color:white;
 }
 .even
 {
-background-color: #ffaa00;
+    background-color: #FAFAD2;
+    color:black;
 }
 
 table,th, td {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
-    color:white;
 }
 
 footer
