@@ -69,12 +69,12 @@ a:active {
 }
 .odd
 {
-    background-color: #8A2BE2;
+    background-color:#8A2BE2;
     color:white;
 }
 .even
 {
-    background-color: #FAFAD2;
+    background-color:#FAFAD2;
     color:black;
 }
 
