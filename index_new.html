@@ -12,13 +12,13 @@
         <h1> WEB-разработка</h1> 
       </div> 
     </header>
-    <div class = "content">
-    <nav class = "nav">
-     <u1>
-       <li><a href="#links" title ="Ссылки" > Список ссылок </a> |</li>
-       <li><a href="#table" title ="Таблица"> Таблица </a> |</li>
-       <li><a href="#form" title ="Форма"> Форма </a> |</li>
-       </u1>
+    <div class = "navigation">
+     <nav>
+       <a href="#links" title ="Ссылки" > Список ссылок </a>
+       <a href="#table" title ="Таблица"> Таблица </a>
+       <a href="#form" title ="Форма"> Форма </a>
+       <a href="#bottom" title ="Вниз"> Конец страницы </a>
+         
     </nav>
     <h2 id="list">Нумерованный список гиперссылок </h2>
     <ol>
@@ -48,8 +48,8 @@
       </p>
      <li><img src="https://i.pinimg.com/originals/bd/bc/35/bdbc3505a9d8343d1bffe91977237e49.jpg"</img> </li>
      <li>
-        <img src="98dd30a7f4058cba54a6b5da69d19f20.jpg" width="563" height="751" alt="Осенняя эстетика" usemap="#navigation">
-        <map name="navigation">
+        <img src="98dd30a7f4058cba54a6b5da69d19f20.jpg" width="563" height="751" alt="Осенняя эстетика" usemap="#shapes">
+        <map name="shapes">
           <area shape="circle" coords="120,153,116" href="https://kubsu.ru/" alt="Ссылка из круга">
           <area shape="rect" coords="88,317,339,301" href="https://kubsu.ru/" alt="Ссылка из прямоугольника">
        </map>
@@ -62,27 +62,27 @@
      <li><a href="/news.html">Сокращенная ссылка на внутреннюю</a> </li>
     </ol>
      <table id="table">
-        <tr class="even">
-            <th> Столбец 1</th>
-            <th> Столбец 2</th>
-            <th> Столбец 3</th>
-        </tr>
+      <tr class="even">
+        <th>Столбец 1</th>
+        <th> Столбец 2</th>
+        <th> Столбец 3</th>
+      </tr>
+      <tr class="odd">
+        <td colspan="3"> Строка - одна ячейка </td>
+      </tr>
+      <tr class="even">
+        <td> Ячейка </td>
+        <td> Ячейка </td>
+        <td> Ячейка </td>
+      </tr>
         <tr class="odd">
-            <td colspan="3"> Вся строка как одна ячейка </td>
+          <td colspan="2"> 2 ячейки по ширине </td>
+          <td> Одна ячейка </td>
         </tr>
         <tr class="even">
-            <td> Одна ячейка </td>
-            <td> Одна ячейка </td>
-            <td> Одна ячейка </td>
-        </tr>
-        <tr class="odd">
-            <td colspan="2"> 2 ячейки по ширине </td>
-            <td> Одна ячейка </td>
-        </tr>
-        <tr class="even">
-            <td> Одна ячейка </td>
-            <td> Одна ячейка </td>
-            <td> Одна ячейка </td>
+          <td> Ячейка </td>
+          <td> Ячейка </td>
+          <td> Ячейка </td>
         </tr>
     </table>
 
