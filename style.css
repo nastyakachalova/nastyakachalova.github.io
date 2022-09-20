@@ -54,7 +54,7 @@ a:active {
     color: white;
   }
 
-.content
+.navigation
 {
     margin: 0 auto;
     max-width: 960px;
@@ -80,7 +80,7 @@ table,th, td {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
-    color:black;
+    color:white;
 }
 
 footer
