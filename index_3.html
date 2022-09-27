@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang = "ru">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Качалова Анастасия Алексеевна 25/1</title>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="style_3.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="header" class="item">
+          <header>
+            <div class="header">
+              <img class = "logotype" src="187-1877192_image-for-fred-perry-logo-vector-background-world.png" alt="Лого">
+              <h1> WEB-разработка</h1> 
+            </div> 
+          </header>
+          <div class = "navigation">
+           <nav>
+             <a href="#links" title ="Ссылки" > Список ссылок </a>/
+             <a href="#table" title ="Таблица"> Таблица </a>/
+             <a href="#form" title ="Форма"> Форма </a>/
+             <a href="#bottom" title ="Вниз"> Конец страницы </a>/
+
+          </nav>
+          <h2 id="list">Нумерованный список гиперссылок </h2>
+          <ol>
+            <li> <a href="https://kubsu.ru/">КубГУ</a> </li>
+            <li> <a href="http://kubsu.ru/">КубГУ</a> </li>
+            <li> <a href="ftp://example.com/Temp/file.txt">Файл с FTP без авторизации</a> </li>
+            <li> <a href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Файл с FTP с авторизацией</a> </li>
+            <li><a href="https://en.wikipedia.org/wiki/270_Park_Avenue_(1960–2021)#Impact">270 Park Avenue (1960–2021),Impact</a> </li>
+            <li><a href="#about">Об этой странице</a> </li>
+            <li><a href="https://someshop.ru/catalog/iphone?page=1&perpage=20">1-я страница коталога с 20-ю товарами</a> </li>
+           <li>
+              <nav id="#links">
+                <ul>
+                  <li><a href="/">Главная</a> </li>
+                  <li><a href="#list">Начало страницы</a> </li>
+                  <li><a href="#form">Форма</a> </li>
+                  <li><a href="#table">Таблица</a></li>
+                </ul>
+              </nav>
+           </li>
+           <li><a title="Ссылка">Ссылка1</a> </li>
+           <li><a href="#no_scroll">Ссылка2</a> </li> 
+           <li><a href="https://ru.wikipedia.org/wiki/Хекер,_Тим" rel="nofollow">Ссылка, по которой запрещён переход поисковикам</a> </li>
+           <!--noindex--><li><a href="https://kubsu.ru/">Ссылка с запретом на индексацию</a> <p> </p></li><!--/noindex-->
+           <li>Сюда вставлена<a href="https://kubsu.ru/"> ссылка</a>,которая называется контекстной.</li>
+           <li><img src="https://i.pinimg.com/originals/bd/bc/35/bdbc3505a9d8343d1bffe91977237e49.jpg" class="picture" alt="Описание картинки"> </li>
+           <li>
+              <img src="98dd30a7f4058cba54a6b5da69d19f20.jpg" width="563" height="751" alt="Осенняя эстетика" usemap="#shapes">
+              <map name="shapes">
+                <area shape="circle" coords="120,153,116" href="https://kubsu.ru/" alt="Ссылка из круга">
+                <area shape="rect" coords="88,317,359,710" href="https://kubsu.ru/" alt="Ссылка из прямоугольника">
+             </map>
+            </li>
+           <li><a href="./news.html">Относительная ссылка в текущем диалоге в никуда</a> </li>
+           <li><a href="about/news.html"> Относительная ссылка в никуда на страницу в каталоге about</a> </li>
+           <li><a href="../news.html">Относительная ссылка в никуда на страницу в каталоге уровнем выше текущего</a> </li>
+           <li><a href="../../news.html">Относительная ссылка в никуда на страницу в каталоге двумя уровнями выше</a> </li>
+           <li><a href="/">Сокращенная ссылка на главную</a> </li>
+           <li><a href="/news.html">Сокращенная ссылка на внутреннюю</a> </li>
+          </ol>
+           <table id="table">
+            <tr class="even">
+              <th>Столбец 1</th>
+              <th> Столбец 2</th>
+              <th> Столбец 3</th>
+            </tr>
+            <tr class="odd">
+              <td colspan="3"> Строка - одна ячейка </td>
+            </tr>
+            <tr class="even">
+              <td> Ячейка </td>
+              <td> Ячейка </td>
+              <td> Ячейка </td>
+            </tr>
+              <tr class="odd">
+                <td colspan="2"> 2 ячейки по ширине </td>
+                <td> Одна ячейка </td>
+              </tr>
+              <tr class="even">
+                <td> Ячейка </td>
+                <td> Ячейка </td>
+                <td> Ячейка </td>
+              </tr>
+          </table>
+
+          <h2 id="form"> Форма:</h2>
+
+          <form action="/" method="POST">
+            <label>
+              ФИО:<br />
+              <input name="field-name-1" placeholder="ФИО" />
+            </label><br />
+
+            <label>
+              Email:<br />
+              <input name="field-email" type="email" placeholder="Введите вашу почту" />
+            </label><br />
+
+            <label>
+              Дата рождения:<br />
+              <input name="field-date" type="date" />
+            </label><br />
+
+            Пол:<br />
+            <label><input type="radio" name="radio-group-1" value="female" />
+              Женский
+            </label>
+            <label><input type="radio" name="radio-group-1" value="man" />
+              Мужской
+            </label><br />
+
+            Кол-во конечностей:<br />
+            <label><input type="radio" name="radio-group-2" value="1" />
+             1
+            </label>
+            <label><input type="radio" name="radio-group-2" value="2" />
+             2
+            </label>
+            <label><input type="radio" name="radio-group-2" value="3" />
+              3
+            </label>
+            <label><input type="radio" name="radio-group-2" value="4" />
+              4
+            </label>
+            <label><input type="radio" name="radio-group-2" value="etc" />
+              Другое
+            </label><br />
+
+            <label>
+              Сверхспособности:
+              <br />
+              <select name="field-spower" multiple="multiple">
+                <option value="spower-immortality">Бессметрие</option>
+                <option value="spower-no-walls">Прохождение сквозь стены</option>
+                <option value="spower-levitation">Левитация</option>
+              </select>
+            </label><br />
+
+            <label>
+              Биография:<br />
+              <textarea name="field-biography" placeholder="Минимум 100 слов"></textarea>
+            </label><br />      
+
+            <label><input type="checkbox" name="contract-checked" />
+              С контрактом ознакомлен (а)</label><br />
+
+            <input type="submit" value="Отправить" />
+        </form>
+        <p id="about">Создание этой страницы было моим домашним заданием</p>
+
+          </div>
+          <footer>
+            <div class = "footer" id="bottom">
+              <p> Разработка пользовательского WEB-интерфейса</p>
+            </div>
+          </footer>
+ </body>
+</html>
