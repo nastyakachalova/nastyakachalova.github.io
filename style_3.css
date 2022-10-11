@@ -58,6 +58,12 @@ a:active {
     margin: 0 auto;
     max-width: 960px;
 }
+
+#menu{
+    display:flex;
+    flex-direction: column;
+}
+
 .picture
 {
     width: 400px;
