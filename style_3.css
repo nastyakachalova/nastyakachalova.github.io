@@ -90,6 +90,11 @@ table,th, td {
     text-align: center;
 }
 
+#table-form{
+    display:flex;
+    flex-direction:column;
+}
+
 footer
 {
   background-color: white;
