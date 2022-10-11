@@ -95,6 +95,14 @@ table,th, td {
     flex-direction:column;
 }
 
+#table-form #table{
+    order:1;
+}
+
+#table-form #form{
+    order:-1;
+}
+
 footer
 {
   background-color: white;
