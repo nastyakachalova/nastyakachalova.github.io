@@ -118,3 +118,16 @@ footer
     max-width: 960px;
     text-align: center;
 }
+
+@media screen and (min-width: 800px) {
+    #menu {
+    flex-direction: row;
+    }
+    #table-form #table{
+        order:-1;
+    }
+    #table-form #form{
+        order:1;
+    }
+ }
+    
