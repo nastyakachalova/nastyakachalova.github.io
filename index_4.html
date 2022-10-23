@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang = "ru">
+  <head>
+    <title>Качалова Анастасия Алексеевна 25/1</title>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="style_4.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class=" bg-dark text-white">
+    <header>
+      <div class="container">
+        <div class="row bg-danger text-white">
+          <div class="col-2"><img class = "logotype" src="187-1877192_image-for-fred-perry-logo-vector-background-world.png" alt="Лого"></div>
+          <div class="col-10 align-self-center"><h1> WEB-разработка</h1></div> 
+      </div> 
+    </header>
+    <div class = " p-3 container px-4 text-center " >
+        <div class="row">
+            <div class="col-lg-2 col-sm-12"><a href="#links" class="text-warning" title ="Ссылки" > Список ссылок </a></div>
+            <div class="col-lg-2 col-sm-12"><a href="#table" class="text-warning" title ="Таблица"> Таблица </a></div>
+            <div class="col-lg-2 col-sm-12"><a href="#form" class="text-warning" title ="Форма"> Форма </a></div>
+            <div class="col-lg-2 col-sm-12"><a href="#bottom" class="text-warning" title ="Вниз"> Конец страницы </a></div>      
+     </div>
+     </div>
+    <h2>Нумерованный список гиперссылок </h2>
+    <ol  class="list-group list-group-numbered">
+      <li> <a href="https://kubsu.ru/" class="text-warning">КубГУ</a> </li>
+      <li> <a href="http://kubsu.ru/" class="text-warning">КубГУ</a> </li>
+      <li> <a href="ftp://example.com/Temp/file.txt" class="text-warning">Файл с FTP без авторизации</a> </li>
+      <li> <a href="ftp://user:pass123@tavalik.ru/Temp/file.txt" class="text-warning">Файл с FTP с авторизацией</a> </li>
+      <li><a href="https://en.wikipedia.org/wiki/270_Park_Avenue_(1960–2021)#Impact" class="text-warning">270 Park Avenue (1960–2021),Impact</a> </li>
+      <li><a href="#about" class="text-warning">Об этой странице</a> </li>
+      <li><a href="https://someshop.ru/catalog/iphone?page=1&perpage=20"class="text-warning">1-я страница коталога с 20-ю товарами</a> </li>
+     <li>
+          <ul>
+            <li><a href="/" class="text-warning">Главная</a> </li>
+            <li><a href="#list" class="text-warning">Начало страницы</a> </li>
+            <li><a href="#form" class="text-warning">Форма</a> </li>
+            <li><a href="#table" class="text-warning">Таблица</a></li>
+          </ul>
+     </li>
+     <li><a title="Ссылка" class="text-warning">Ссылка1</a> </li>
+     <li><a href="#no_scroll" class="text-warning">Ссылка2</a> </li> 
+     <li><a href="https://ru.wikipedia.org/wiki/Хекер,_Тим" rel="nofollow" class="text-warning">Ссылка, по которой запрещён переход поисковикам</a> </li>
+     <!--noindex--><li><a href="https://kubsu.ru/" class="text-warning">Ссылка с запретом на индексацию</a> <p> </p></li><!--/noindex-->
+     <li>Сюда вставлена<a href="https://kubsu.ru/" class="text-warning"> ссылка</a>,которая называется контекстной.</li>
+     <li><img src="https://i.pinimg.com/originals/bd/bc/35/bdbc3505a9d8343d1bffe91977237e49.jpg " class="picture" alt="Описание картинки"> </li>
+     <li>
+        <img src="98dd30a7f4058cba54a6b5da69d19f20.jpg" width="563" height="751" alt="Осенняя эстетика" usemap="#shapes">
+        <map name="shapes">
+          <area shape="circle" coords="120,153,116" href="https://kubsu.ru/" alt="Ссылка из круга">
+          <area shape="rect" coords="88,317,359,710" href="https://kubsu.ru/" alt="Ссылка из прямоугольника">
+       </map>
+      </li>
+     <li><a href="./news.html" class="text-warning">Относительная ссылка в текущем диалоге в никуда</a> </li>
+     <li><a href="about/news.html" class="text-warning"> Относительная ссылка в никуда на страницу в каталоге about</a> </li>
+     <li><a href="../news.html"class="text-warning">Относительная ссылка в никуда на страницу в каталоге уровнем выше текущего</a> </li>
+     <li><a href="../../news.html" class="text-warning">Относительная ссылка в никуда на страницу в каталоге двумя уровнями выше</a> </li>
+     <li><a href="/" class="text-warning">Сокращенная ссылка на главную</a> </li>
+     <li><a href="/news.html" class="text-warning">Сокращенная ссылка на внутреннюю</a> </li>
+    </ol>
+     <table class="table p-3 border ">   
+            <thead>
+            <tr class="table-warning">
+                <th scope="col "><div class="mx-auto" style="width: 200px;">Столбец 1</div></th>
+                <th scope="col"> <div class="mx-auto" style="width: 200px;">Столбец 2 </div></th>
+                <th scope="col"><div class="mx-auto" style="width: 200px;"> Столбец 3</div></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-primary" >
+                <td colspan="3" class="text-white"><div class="mx-auto" style="width: 200px;" >Строка - одна ячейка</div>  </td>
+            </tr>
+            <tr class="table-warning">
+                <td><div class="mx-auto" style="width: 200px;">Ячейка</div>  </td>
+                <td> <div class="mx-auto" style="width: 200px;">Ячейка</div> </td>
+                <td> <div class="mx-auto" style="width: 200px;">Ячейка </div></td>
+            </tr>
+                <tr class="table-primary">
+                <td colspan="2" class="text-white"><div class="mx-auto" style="width: 200px;"> 2 ячейки по ширине </div> </td>
+                <td class="text-white"> <div class="mx-auto" style="width: 200px;">Одна ячейка</div> </td>
+                </tr>
+                <tr class="table-warning">
+                  <td><div class="mx-auto" style="width: 200px;">Ячейка</div>  </td>
+                  <td> <div class="mx-auto" style="width: 200px;">Ячейка</div> </td>
+                  <td> <div class="mx-auto" style="width: 200px;">Ячейка </div></td>
+              </tr>
+        </tbody>
+    </table>
+
+    <form action="/" method="POST">
+        <h2 id="form"> Форма:</h2>
+      <label>
+        ФИО:<br />
+        <input name="field-name-1" placeholder="ФИО" />
+      </label><br />
+
+      <label>
+        Email:<br />
+        <input name="field-email" type="email" placeholder="Введите вашу почту" />
+      </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date" type="date" />
+      </label><br />
+
+      Пол:<br />
+      <label><input type="radio" name="radio-group-1" value="female" />
+        Женский
+      </label>
+      <label><input type="radio" name="radio-group-1" value="man" />
+        Мужской
+      </label><br />
+
+      Кол-во конечностей:<br />
+      <label><input type="radio" name="radio-group-2" value="1" />
+       1
+      </label>
+      <label><input type="radio" name="radio-group-2" value="2" />
+       2
+      </label>
+      <label><input type="radio" name="radio-group-2" value="3" />
+        3
+      </label>
+      <label><input type="radio" name="radio-group-2" value="4" />
+        4
+      </label>
+      <label><input type="radio" name="radio-group-2" value="etc" />
+        Другое
+      </label><br />
+
+      <label>
+        Сверхспособности:
+        <br />
+        <select name="field-spower" multiple="multiple">
+          <option value="spower-immortality">Бессметрие</option>
+          <option value="spower-no-walls">Прохождение сквозь стены</option>
+          <option value="spower-levitation">Левитация</option>
+        </select>
+      </label><br />
+
+      <label>
+        Биография:<br />
+        <textarea name="field-biography" placeholder="Минимум 100 слов"></textarea>
+      </label><br />      
+
+      <label><input type="checkbox" name="contract-checked" />
+        С контрактом ознакомлен (а)</label><br />
+
+      <input type="submit" value="Отправить" />
+  </form>
+  </div>
+  <p id="about">Создание этой страницы было моим домашним заданием</p>
+    
+    </div>
+    <footer>
+      <div class = "footer" id="bottom">
+        <p> Разработка пользовательского WEB-интерфейса</p>
+      </div>
+    </footer>
+</div>  
+ </body>
+</html>
