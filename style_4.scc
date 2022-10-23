@@ -1,0 +1,32 @@
+.logotype
+{
+    padding: -20px;
+    float: left;
+    height: 120px;
+    width: 120px;
+    margin-right: 20px;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    margin-top: -20 px;
+}
+
+.footer{
+    margin:0 auto;
+}
+
+@media screen and (min-width: 800px) {
+    #menu {
+    flex-direction: row;
+    }
+    #table-form #table{
+        order:-1;
+    }
+    #table-form #form{
+        order:1;
+    }
+ }
