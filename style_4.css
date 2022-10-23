@@ -11,6 +11,11 @@ body{
     margin: 0;
 }
 
+
+.picture
+{
+    width: 400px;
+}
 header{
     margin-top: -20 px;
 }
