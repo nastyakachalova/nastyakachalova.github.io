@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+        <script>
+function click1() {
+    let f1 = +document.counter.price.value;
+    let f2 =+document.counter.count.value;
+    let r = document.getElementById("result");
+    r.innerHTML ="Стоимость: " + f1 * f2;
+    // return false;//
+}
+</script>
+<!-- <div id="result"> </div> -->
+<form name="counter">
+ <input name="price" placeholder="Цена" type="text">
+ <input name="count" placeholder="Количество" type="text">
+<!-- <button id="button1" onclick="return click()">Рассчитать</button>    -->
+<input type="button"  onclick="click1()" value="Рассчитать"> 
 
+</form>
+
+<div id="result" style="margin-top:20px"> Стоимость</div>
+        
+</body>
+</html>
