@@ -20,10 +20,7 @@ header{
 }
 
 @media screen and (min-width: 800px) {
-    #menu {
-    flex-direction: row;
-    }
-    #table-form #table{
+    #table-form .table p-3 border{
         order:-1;
     }
     #table-form #form{
