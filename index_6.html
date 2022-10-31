@@ -1,47 +1,73 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-  <script src="script6.js" defer></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Задание 6</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style6.css">
+    <meta charset="UTF-8">
+    <title>Task 5</title>
 </head>
-
 <body>
-  <div class="all">
-      <span class="h">Узнать стоимость картин с доставкой</span>
-      <form>
-        <span> Введите количество товаров:</span>
-        <div class="field">
-          <input name="field" id="field" type="text">
-        </div>
-        <span> Выберете тип доставки</span>
-        <select name="prodType">
-          <option value="1">Почта Росии</option>
-          <option value="2">СДЭК</option>
-          <option value="3">Пони Экспресс</option>
-        </select>
-        <div id="prodOptions">
-          <span> Куда доставляем?</span> <br>
-          <label><input type="radio" name="prodOptions" value="option1">В почтовое отделение </label>
-          <label><input type="radio" name="prodOptions" value="option2"> В пункт выдачи </label>
-          <label><input type="radio" name="prodOptions" value="option3"> До двери </label>
-        </div>
-        <div id="checkboxes">
-          <span> Выберите дополнения <br> (При экспресс доставке курьер привозит товар к вашей двери)</span> <br>
-          <label><input type="checkbox" name="checkboxes" value="check1"> Дополнительный слой упаковки</label>
-          <label><input type="checkbox" name="checkboxes" value="check2"> Милые наклеечки</label>
-        </div> 
-      </form>
-      <br> 
-      <div id="result" ></div>
-  </div>
-</body>
+    <script>
+        function click1() {
+            let f1 = +document.counter.price.value;
+            let f2 = +document.counter.count.value;
+            let f3= document.counter.field_type.selectedIndex;
+            let f4=0;
+            if (document.counter.radio_group_1[0].checked)
+             f4=1;
+            if (document.counter.radio_group_1[1].checked)
+                f4=2;
+            if (document.counter.radio_group_1[2].checked)
+                f4=3;
+            let f5=0;
+            if (document.counter.check_group_1[0].checked)
+             f5=1;
+            if (document.counter.check_group_1[1].checked)
+                f5=2;
+            console.log(f5);
+            let r = document.getElementById("result");
+            if ((f3==2||f3==3) && (f4>1) && (f5==1))
+                r.innerHTML ="Стоимость: " + (f1 * f2 + 100);
+            else
+                r.innerHTML ="Стоимость: " + f1 * f2;
+            // return false;//
+        }
+        </script>
+        <!-- <div id="result"> </div> -->
+        <form name="counter">
+         <input name="price" placeholder="Цена" type="text">
+         <input name="count" placeholder="Количество" type="text">
+        <!-- <button id="button1" onclick="return click()">Рассчитать</button>    -->
+        <label>
+           <p>Тип товара:
+            <select name="field_type">
+              <option value="spower-clothes">Одежда</option>
+              <option value="spower-meal">Еда</option>
+              <option value="spower-shoes">Обувь</option>
+              <option value="spower-leisure">Досуг</option>              
+            </select>
+          </label></p>
 
+        <p> Опции товара: </p> 
+      <label><input type="radio" name="radio_group_1" value="1">
+       Гарантия около 5 лет
+      </label>
+      <label><input type="radio" name="radio_group_1" value="2">
+       Многофункциональность
+      </label>
+      <label><input type="radio" name="radio_group_1" value="3">
+        Красивая упаковка
+        </label>
+
+        <p>Свойства товара: </p>
+        <label><input type="checkbox" name="check_group_1">
+            Мягкость</label><br>
+        <label><input type="checkbox" name="check_group_1">
+            Твёрдость</label><br>
+        <br>
+        <input type="button"  onclick="click1()" value="Рассчитать"> <br>
+        <div id="result" style="margin-top:20px"> Стоимость</div>
+        </form>
+        
+       
+                
+</body>
 </html>
