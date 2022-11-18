@@ -44,10 +44,11 @@ function popup(par) {
     window.addEventListener("popstate", (e) => {
       popup(e);
     });
-   // let b = document.getElementById("button1");
-   // b.addEventListener("click", () => {
-      //popup(true);
-   // });
+  
+      
+      
+      
+      
     let c = document.getElementById("closebutton");
     c.addEventListener("click", () => {
       popup(false);
