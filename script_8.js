@@ -1,6 +1,33 @@
 function pop_up(){
     let bg = document.getElementById("popup_bg");
-    bg.style.display="block";
+    bg.style.display="block"
+    history.pushState(true, null, "#form");
+}
+
+function close_popup(){
+  if (location.hash != "#form") {
+    //popup(true);
+    let bg = document.getElementById("popup_bg");
+    bg.style.display="none"
+    history.pushState(false, null, "#");
+  }
+}
+
+window.onbeforeunload = function(){
+  return "Есть несохранённые изменения. Всё равно уходим?";
+  alert("ok");
+  localStorage.setItem("Name", document.form1.my_form.name.value);
+  console.log(document.form1.my_form.name.value);
+  localStorage.setItem("Email", document.form1.my_form.email.value);
+  console.log(document.form1.my_form.email.value);
+  localStorage.setItem("Msg", document.form1.my_form.msg.value);
+  console.log(document.form1.my_form.msg.value);
+  console.log(document.form1.my_checkbox.checked);
+  if (document.form1.my_checkbox.checked) {
+      localStorage.setItem('Checkbox', 1);
+    } else {
+      localStorage.setItem('Checkbox', 0);
+    }
 }
 
 function popup(par) {
@@ -37,22 +64,15 @@ function popup(par) {
       }
   }
 
-  document.addEventListener("DOMContentLoaded", function (event) {
-    if (location.hash === "#form") {
-      popup(true);
-    }
-    window.addEventListener("popstate", (e) => {
-      popup(e);
-    });
+  // document.addEventListener("DOMContentLoaded", function (event) {
+  //   if (location.hash === "#form") {
+  //     popup(true);
+  //   }
+  //   window.addEventListener("popstate", (e) => {
+  //     popup(e);
+  //   });
   
-      
-      
-      
-      
-    let c = document.getElementById("closebutton");
-    c.addEventListener("click", () => {
-      popup(false);
-    });
+   
     let popupBg = document.getElementById("popup_bg");
     document.addEventListener("click", (e) => {
       if (e.target === popupBg) {
@@ -70,11 +90,11 @@ function popup(par) {
       cb.checked = false;
     }
   
-    names.oninput = save;
+    name.oninput = save;
     email.oninput = save;
     msg.oninput = save;
     cb.onclick = save;
-  });
+ 
   $(function () {
     $(".ajaxForm").submit(function (e) {
       e.preventDefault();
