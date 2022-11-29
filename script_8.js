@@ -1,6 +1,6 @@
 function pop_up(){
     let bg = document.getElementById("popup_bg");
-    bg.style.display="block"
+    bg.style.display="block";
     history.pushState(true, null, "#form");
 }
 
