@@ -1,0 +1,93 @@
+/*подключение шрифтов*/
+@font-face {   
+    font-family: Montserrat;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {  
+font-family: Montserrat-Bold;
+    src: url(Montserrat-Bold.ttf);
+}
+
+/*задание фона, отступы*/
+header{
+    padding: 50px 100px; /*увеличили размер, отступы сверху и снизу, слева и справа*/
+    box-sizing: border-box;/*ширина блока вместе с пэддингами*/
+    background-color: black;
+}
+header h1{
+    text-align: center;
+    color:white;
+    font-weight: 900;
+    font-family: Montserrat-Bold;
+}
+
+header h4{
+    text-align: center;
+    font-size: 1vw;
+    color:rgba(255, 255, 255, 0.749);
+    font-weight: 400;
+    font-family: Montserrat;
+}
+
+
+.button-tarif a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header .button-tarif{
+    color:white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 5px;/*закругление*/
+    font-family: Montserrat;
+    border:2px solid #f14d34;
+    padding: 22px 20px; /*увеличили размер, отступы сверху и снизу, слева и справа*/
+    margin: 70px auto;/*отступ сверху и снизу, вырвнивание по середине */
+
+}
+
+.years13 h2{
+    background-color: white;
+    font-family: Montserrat-Bold;
+    color:black;
+
+}
+
+.years13 h3{
+    background-color: white;
+    font-family: Montserrat;
+    color: #4f5a73;
+
+}
+
+.help h2{
+    background-color: white;
+    font-family: Montserrat-Bold;
+    color:black;
+    font-weight: bold;
+}
+
+.help p{
+    background-color: white;
+    font-family: Montserrat-Bold;
+    color:black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.help h4{
+    background-color: white;
+    font-family: Montserrat;
+    color:#4f5a73;
+}
+
+.help h3{
+    background-color: white;
+    font-family: Montserrat;
+    color:#4f5a73;
+}
